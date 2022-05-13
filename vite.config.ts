@@ -24,7 +24,7 @@ export default defineConfig({
       brotliSize: true,
       open: true,
     }),
-    Unocss(),
+    Unocss(resolve(__dirname, './uno.config.ts')),
     chunkSplitPlugin(),
     {
       ...checker({
