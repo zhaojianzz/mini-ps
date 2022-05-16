@@ -16,7 +16,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Components({
-      dts: resolve('./src/components/.conponents.d.ts'),
+      dts: resolve('./src/components/components.d.ts'),
       resolvers: [ ElementPlusResolver() ]
     }),
     BUILD_VSL && visualizer({
